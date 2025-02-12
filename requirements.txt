@@ -1,0 +1,11 @@
+streamlit
+speechrecognition
+torch
+torchvision
+transformers
+huggingface_hub
+numpy
+matplotlib
+gtts
+Pillow
+open_flamingo
