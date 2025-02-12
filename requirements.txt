@@ -1,6 +1,7 @@
 streamlit
+faiss-cpu  # Use faiss-gpu for better performance if available
 speechrecognition
-torch
+torch==2.0.1
 torchvision
 transformers
 huggingface_hub
