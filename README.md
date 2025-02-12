@@ -205,7 +205,7 @@ python -c "from utils import refresh_faiss_index; refresh_faiss_index()"
 
 ## Contributors
 
-- **Your Name** - Developer
+- **Your Name** - Dimakatso Mohapi
 - **Community Contributions** - Always welcome!
 
 ---
