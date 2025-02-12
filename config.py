@@ -6,7 +6,7 @@ from huggingface_hub import hf_hub_download
 # Dataset Paths
 DATASET_DIR = "./test_data_v2"
 CACHE_FILE = "./image_descriptions.pkl"
-FAISS_INDEX_PATH = "./faiss_index.bin"  # Define FAISS index path
+FAISS_INDEX_PATH = "./faiss_index.bin"
 
 # Device Selection (Force GPU for Speed)
 device = "cuda" if torch.cuda.is_available() else "cpu"
