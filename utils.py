@@ -11,13 +11,11 @@ import streamlit as st
 from torchvision import transforms
 from config import DATASET_DIR, CACHE_FILE, FAISS_INDEX_PATH, model, image_processor, tokenizer, device
 
-
 # 🛠️ Optimized Image Transformations
 image_transform = transforms.Compose([
     transforms.Resize((224, 224)),  # Ensure consistent image size
     transforms.ToTensor()
 ])
-
 
 # 🔎 Function to Find Best Match from FAISS
 def find_best_match(user_text):
@@ -114,7 +112,6 @@ def generate_image_descriptions(batch_size=32):  # Increased batch size for spee
 
     print(f"✅ Cached {len(image_description_cache)} image descriptions.")
 
-
 # 🏎️ Function to Refresh FAISS Index
 def refresh_faiss_index():
     print("🔄 Generating FAISS index...")
@@ -152,7 +149,6 @@ def refresh_faiss_index():
         print(f"✅ FAISS index successfully created at {FAISS_INDEX_PATH}")
     else:
         print("❌ FAISS index failed to save!")
-
 
 # 🔍 Function to Search and Display Results in Streamlit
 def search_and_display(user_text):
